@@ -23,6 +23,16 @@
  * 
  * Will return:
  *      The largest gap is: 4
+ * 
+ * There are a couple of constants where we can configure how big the array
+ * storage needs to be to process a number and find the gap. 
+ * 
+ * MAX_BITS - For the binary representation of a number, the maximum amount of bits
+ * MAX_INPUT_NUMBER - The number of digits in the input number.
+ * 
+ * To build and run:
+ * gcc findgap.c -o findgap && ./findgap 529
+ * 
  */
 
 #include <stdio.h>
@@ -54,7 +64,7 @@ int main(int argc, char *argv[])
     int result;
 
     if (argc < 2) {
-        printf("You need to specify a number.");
+        printf("You need to specify a number.\n");
         return 0;
     }
 
@@ -65,7 +75,7 @@ int main(int argc, char *argv[])
     number = atoi(input);
 
     if (number < 0) {
-        printf("Input number must be a positive integer.");
+        printf("Input number must be a positive integer.\n");
         return 0;
     }
 
