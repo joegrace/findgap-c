@@ -2,6 +2,7 @@
  * findgap.c
  * 
  * Author: Joe Grace <joe@w1sk.com>
+ * 6/20/2020
  * 
  * This program takes a number as an input. The program will
  * return the largest gap of 0's in the binary representation
